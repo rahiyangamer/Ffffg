@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenbea Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tenbea Clone</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showTopUpBox()">Top Up</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Get Your Game Top-Up</h2>
+            <button onclick="showProducts()">View Products</button>
+        </section>
+        <section id="products" class="hidden">
+            <h2>Available Top-Ups</h2>
+            <div class="product">
+                <h3>Free Fire Diamonds</h3>
+                <p>Price: BDT 100</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Clash of Clans Gems</h3>
+                <p>Price: BDT 550</p>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+        <section id="top-up-box" class="hidden">
+            <h2>Enter Top Up Details</h2>
+            <form>
+                <label for="game-id">Game ID:</label>
+                <input type="text" id="game-id" placeholder="Enter your Game ID">
+                
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" placeholder="Enter amount">
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Tenbea Clone</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
